@@ -1,4 +1,13 @@
 spring:
-  activemq:
-    broker-url:
+  rabbitmq:
+    addresses: www.bjdnlsj.com:5672
+    username: admin
+    password: admin
+    virtual-host: /
+    connection-timeout: 15000
+    template:
+      mandatory: true
+    publisher-confirms: true
+    publisher-returns: true
+
 
